@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: dart-lang/setup-dart@v1
-      
+
       - name: Install dependencies
         working-directory: .github/workflows/scripts/dart/api_validate
         run: dart pub get
@@ -34,17 +34,17 @@ jobs:
       - name: Analyze project source (api_deploy)
         working-directory: .github/workflows/scripts/dart/api_deploy
         run: dart analyze
-        
-      - name: Install dependencies (made_in_flutter_belgium_data)
-        working-directory: .github/workflows/scripts/dart/made_in_flutter_belgium_data
+
+      - name: Install dependencies (made_in_react_native_belgium_data)
+        working-directory: .github/workflows/scripts/dart/made_in_react_native_belgium_data
         run: dart pub get
-      - name: Verify formatting Deploy (made_in_flutter_belgium_data)
-        working-directory: .github/workflows/scripts/dart/made_in_flutter_belgium_data
+      - name: Verify formatting Deploy (made_in_react_native_belgium_data)
+        working-directory: .github/workflows/scripts/dart/made_in_react_native_belgium_data
         run: dart format --set-exit-if-changed .
-      - name: Analyze project source (made_in_flutter_belgium_data)
-        working-directory: .github/workflows/scripts/dart/made_in_flutter_belgium_data
+      - name: Analyze project source (made_in_react_native_belgium_data)
+        working-directory: .github/workflows/scripts/dart/made_in_react_native_belgium_data
         run: dart analyze
 
       - name: Api validate
         working-directory: .github/workflows/scripts/dart/api_validate
-        run: dart run bin/api_validate.dart        
+        run: dart run bin/api_validate.dart

@@ -1,5 +1,5 @@
 import 'package:http/http.dart';
-import 'package:made_in_flutter_belgium_data/made_in_flutter_belgium_data.dart';
+import 'package:made_in_react_native_belgium_data/made_in_react_native_belgium_data.dart';
 
 Future<String> getProfilePictureUrlForGithubUserName(String githubUserName,
     {MinimizedDeveloper? minimizedDeveloper}) async {
@@ -7,7 +7,7 @@ Future<String> getProfilePictureUrlForGithubUserName(String githubUserName,
       minimizedDeveloper.profilePictureUrl != null) {
     throw ArgumentError(
       'profilePictureUrl for $githubUserName was already set.'
-      'Check the documentation for more information. https://github.com/flutter-belgium/made_in_flutter_belgium_data/tree/main/examples/projects',
+      'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/projects',
     );
   }
   final url = 'https://avatars.githubusercontent.com/$githubUserName';

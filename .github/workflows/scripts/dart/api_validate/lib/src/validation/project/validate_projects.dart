@@ -6,7 +6,7 @@ import 'package:api_validate/src/validation/project/validate_projects_images.dar
 import 'package:api_validate/src/validation/project/validate_projects_links.dart';
 import 'package:api_validate/src/validation/validate_dir.dart';
 import 'package:api_validate/src/writor/list_writor.dart';
-import 'package:made_in_flutter_belgium_data/made_in_flutter_belgium_data.dart';
+import 'package:made_in_react_native_belgium_data/made_in_react_native_belgium_data.dart';
 import 'package:path/path.dart';
 
 Future<List<Project>> validateProjects(
@@ -21,7 +21,7 @@ Future<List<Project>> validateProjects(
       if (baseName != project.name) {
         throw ArgumentError(
           '${project.name} has an invalid name. (directory and name in info.json should be the same)\n\n'
-          'Check the documentation for more information. https://github.com/flutter-belgium/made_in_flutter_belgium_data/tree/main/examples/projects',
+          'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/projects',
         );
       }
       validateProjectImages(project, companies, workingDirPath, itemDir);

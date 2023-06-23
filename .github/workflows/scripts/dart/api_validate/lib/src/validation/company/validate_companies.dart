@@ -5,7 +5,7 @@ import 'package:api_validate/src/validation/company/validate_company_images.dart
 import 'package:api_validate/src/validation/company/validate_company_links.dart';
 import 'package:api_validate/src/validation/validate_dir.dart';
 import 'package:api_validate/src/writor/list_writor.dart';
-import 'package:made_in_flutter_belgium_data/made_in_flutter_belgium_data.dart';
+import 'package:made_in_react_native_belgium_data/made_in_react_native_belgium_data.dart';
 import 'package:path/path.dart';
 
 Future<List<Company>> validateCompanies(String workingDirPath) async {
@@ -19,7 +19,7 @@ Future<List<Company>> validateCompanies(String workingDirPath) async {
       if (baseName != company.name) {
         throw ArgumentError(
           '${company.name} has an invalid name. (directory and name in info.json should be the same)\n\n'
-          'Check the documentation for more information. https://github.com/flutter-belgium/made_in_flutter_belgium_data/tree/main/examples/companies',
+          'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/companies',
         );
       }
       await validateCompanyImages(company, workingDirPath, itemDir);

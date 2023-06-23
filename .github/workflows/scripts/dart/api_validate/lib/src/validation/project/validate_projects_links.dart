@@ -1,5 +1,5 @@
 import 'package:api_validate/src/validation/url/validate_url.dart';
-import 'package:made_in_flutter_belgium_data/made_in_flutter_belgium_data.dart';
+import 'package:made_in_react_native_belgium_data/made_in_react_native_belgium_data.dart';
 
 const _playStorePrefix = 'https://play.google.com/store/apps/details?id=';
 const _appStorePrefix = 'https://apps.apple.com/';

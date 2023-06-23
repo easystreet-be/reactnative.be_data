@@ -1,6 +1,6 @@
 # Code of Conduct
 
-As contributors and maintainers of the "made_in_flutter_belgium_data" repository, we pledge to create and maintain an inclusive and welcoming community for all people. We value diversity and seek to foster a positive and safe environment for everyone involved in the development of this project.
+As contributors and maintainers of the "madein.reactnative.be_data" repository, we pledge to create and maintain an inclusive and welcoming community for all people. We value diversity and seek to foster a positive and safe environment for everyone involved in the development of this project.
 
 To achieve this, we ask all contributors and maintainers to adhere to the following code of conduct:
 
@@ -40,7 +40,7 @@ We take misconduct seriously and will not tolerate any form of discrimination, h
 
 ## Reporting
 
-If you experience or witness any form of misconduct, please report it to the maintainers by contacting: (flutterbelgium@gmail.com)[flutterbelgium@gmail.com]. All reports will be kept confidential, and we will take appropriate action to address the issue.
+If you experience or witness any form of misconduct, please report it to the maintainers by contacting: (hello@easystreet.be)[hello@easystreet.be]. All reports will be kept confidential, and we will take appropriate action to address the issue.
 
 ## Acknowledgement
 

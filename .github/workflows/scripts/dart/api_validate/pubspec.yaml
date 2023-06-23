@@ -1,17 +1,17 @@
 name: api_validate
 description: A sample command-line application.
 version: 1.0.0
-publish_to: 'none'
+publish_to: "none"
 
 environment:
-  sdk: '>=2.19.2 <3.0.0'
+  sdk: ">=2.19.2 <3.0.0"
 
 dependencies:
   collection: ^1.17.1
   http: ^0.13.5
   path: ^1.8.0
-  made_in_flutter_belgium_data:
-    path: ../made_in_flutter_belgium_data
+  made_in_react_native_belgium_data:
+    path: ../made_in_react_native_belgium_data
 
 dev_dependencies:
   lints: ^2.0.0

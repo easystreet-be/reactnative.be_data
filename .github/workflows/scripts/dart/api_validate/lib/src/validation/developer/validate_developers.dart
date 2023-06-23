@@ -6,7 +6,7 @@ import 'package:api_validate/src/validation/developer/validate_developer_links.d
 import 'package:api_validate/src/validation/validate_dir.dart';
 import 'package:api_validate/src/writor/list_writor.dart';
 import 'package:collection/collection.dart';
-import 'package:made_in_flutter_belgium_data/made_in_flutter_belgium_data.dart';
+import 'package:made_in_react_native_belgium_data/made_in_react_native_belgium_data.dart';
 import 'package:path/path.dart';
 
 Future<List<Developer>> validateDevelopers(
@@ -21,7 +21,7 @@ Future<List<Developer>> validateDevelopers(
       if (baseName != developer.githubUserName) {
         throw ArgumentError(
           '${developer.githubUserName} has an invalid name. (directory and githubUserName in info.json should be the same)\n\n'
-          'Check the documentation for more information. https://github.com/flutter-belgium/made_in_flutter_belgium_data/tree/main/examples/developers',
+          'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/developers',
         );
       }
       await _updateDeveloper(developer, workingDirPath, itemDir);

@@ -1,4 +1,4 @@
-import 'package:made_in_flutter_belgium_data/made_in_flutter_belgium_data.dart';
+import 'package:made_in_react_native_belgium_data/made_in_react_native_belgium_data.dart';
 
 class ApiValidationData {
   final List<Company> companies;

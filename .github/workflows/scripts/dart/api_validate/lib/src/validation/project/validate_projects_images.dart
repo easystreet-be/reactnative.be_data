@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:collection/collection.dart';
-import 'package:made_in_flutter_belgium_data/made_in_flutter_belgium_data.dart';
+import 'package:made_in_react_native_belgium_data/made_in_react_native_belgium_data.dart';
 import 'package:path/path.dart';
 
 const _allowedImageFolder = [
@@ -22,7 +22,7 @@ void validateProjectImages(Project project, List<Company> companies,
   if (project.images != null) {
     throw ArgumentError(
       '${project.name} has configured images.\n\n'
-      'Check the documentation for more information. https://github.com/flutter-belgium/made_in_flutter_belgium_data/tree/main/examples/projects',
+      'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/projects',
     );
   }
   final companyForProject = companies
@@ -45,7 +45,7 @@ ProjectImages _getImages(
   if (!imagesDir.existsSync()) {
     throw ArgumentError(
       '${project.name} has no `assets/img` directory added.\n\n'
-      'Check the documentation for more information. https://github.com/flutter-belgium/made_in_flutter_belgium_data/tree/main/examples/projects',
+      'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/projects',
     );
   }
   final dir = Directory(
@@ -59,13 +59,13 @@ ProjectImages _getImages(
       if (!_allowedImageFolder.contains(fileName)) {
         throw ArgumentError(
           '${project.name} has invalid folder in the image folder ($fileName).\n\n'
-          'Check the documentation for more information. https://github.com/flutter-belgium/made_in_flutter_belgium_data/tree/main/examples/projects',
+          'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/projects',
         );
       }
       screenshotLinks.addAll(_getScreenshotsUrls(project, imageFile, dir));
     } else if (imageFile is File) {
       final imageUrl =
-          'https://api.madein.flutterbelgium.be/projects/${project.name}/images/$fileName';
+          'https://api.madein.reactnative.be/projects/${project.name}/images/$fileName';
       imageFile.copySync(join(dir.path, fileName));
       if (fileName == ProjectImageType.appIcon.fileName) {
         appIconUrl = imageUrl;
@@ -74,7 +74,7 @@ ProjectImages _getImages(
       } else {
         throw ArgumentError(
           '${project.name} has invalid images in the image folder ($fileName).\n\n'
-          'Check the documentation for more information. https://github.com/flutter-belgium/made_in_flutter_belgium_data/tree/main/examples/projects',
+          'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/projects',
         );
       }
     } else {
@@ -85,7 +85,7 @@ ProjectImages _getImages(
   if (appIconUrl == null) {
     throw ArgumentError(
       '${project.name} has no app_icon.webp file.\n\n'
-      'Check the documentation for more information. https://github.com/flutter-belgium/made_in_flutter_belgium_data/tree/main/examples/projects',
+      'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/projects',
     );
   }
   return ProjectImages(
@@ -105,7 +105,7 @@ List<String> _getScreenshotsUrls(
     final screenshotImage = File(join(imageFile.path, fileName));
     if (screenshotImage.existsSync()) {
       final imageUrl =
-          'https://api.madein.flutterbelgium.be/projects/${project.name}/images/$fileName';
+          'https://api.madein.reactnative.be/projects/${project.name}/images/$fileName';
       screenshots.add(imageUrl);
       screenshotImage.copySync(join(dir.path, fileName));
     } else {

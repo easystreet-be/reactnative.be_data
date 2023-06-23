@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:api_validate/src/validation/developer/validate_profile_picture.dart';
-import 'package:made_in_flutter_belgium_data/made_in_flutter_belgium_data.dart';
+import 'package:made_in_react_native_belgium_data/made_in_react_native_belgium_data.dart';
 
 enum DeveloperImageType {
   profilePicture('profile_picture.webp');
@@ -16,7 +16,7 @@ Future<void> validateDeveloperImages(
   if (developer.images != null) {
     throw ArgumentError(
       '${developer.githubUserName} has configured images.\n\n'
-      'Check the documentation for more information. https://github.com/flutter-belgium/made_in_flutter_belgium_data/tree/main/examples/developers',
+      'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/developers',
     );
   }
   developer.images = await _getImages(workingDirPath, itemDir, developer);
