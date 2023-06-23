@@ -21,7 +21,7 @@ Future<List<Developer>> validateDevelopers(
       if (baseName != developer.githubUserName) {
         throw ArgumentError(
           '${developer.githubUserName} has an invalid name. (directory and githubUserName in info.json should be the same)\n\n'
-          'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/developers',
+          'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/wiki/developers',
         );
       }
       await _updateDeveloper(developer, workingDirPath, itemDir);

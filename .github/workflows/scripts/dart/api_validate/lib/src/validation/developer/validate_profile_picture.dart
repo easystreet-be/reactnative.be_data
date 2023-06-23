@@ -7,7 +7,7 @@ Future<String> getProfilePictureUrlForGithubUserName(String githubUserName,
       minimizedDeveloper.profilePictureUrl != null) {
     throw ArgumentError(
       'profilePictureUrl for $githubUserName was already set.'
-      'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/projects',
+      'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/wiki/projects',
     );
   }
   final url = 'https://avatars.githubusercontent.com/$githubUserName';

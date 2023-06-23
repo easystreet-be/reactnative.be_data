@@ -17,7 +17,7 @@ Future<void> validateCompanyImages(
   if (company.images != null) {
     throw ArgumentError(
       '${company.name} has configured images.\n\n'
-      'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/companies',
+      'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/wiki/companies',
     );
   }
   company.images = await _getImages(workingDirPath, itemDir, company);
@@ -34,7 +34,7 @@ Future<CompanyImages> _getImages(
   if (!imagesDir.existsSync()) {
     throw ArgumentError(
       '${company.name} has no `assets/img` directory added.\n\n'
-      'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/companies',
+      'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/wiki/companies',
     );
   }
   final dir = Directory(
@@ -47,7 +47,7 @@ Future<CompanyImages> _getImages(
     if (imageFile is Directory) {
       throw ArgumentError(
         '${company.name} has invalid folder in the image folder ($fileName).\n\n'
-        'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/companies',
+        'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/wiki/companies',
       );
     } else if (imageFile is File) {
       final imageUrl =
@@ -60,7 +60,7 @@ Future<CompanyImages> _getImages(
       } else {
         throw ArgumentError(
           '${company.name} has invalid images in the image folder ($fileName).\n\n'
-          'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/companies',
+          'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/wiki/companies',
         );
       }
     } else {
@@ -71,7 +71,7 @@ Future<CompanyImages> _getImages(
   if (logoUrl == null) {
     throw ArgumentError(
       '${company.name} has no logo.webp or logo.svg file.\n\n'
-      'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/companies',
+      'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/wiki/companies',
     );
   }
   return CompanyImages(

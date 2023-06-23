@@ -16,7 +16,7 @@ Future<void> validateDeveloperImages(
   if (developer.images != null) {
     throw ArgumentError(
       '${developer.githubUserName} has configured images.\n\n'
-      'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/developers',
+      'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/wiki/developers',
     );
   }
   developer.images = await _getImages(workingDirPath, itemDir, developer);

@@ -21,7 +21,7 @@ Future<List<Project>> validateProjects(
       if (baseName != project.name) {
         throw ArgumentError(
           '${project.name} has an invalid name. (directory and name in info.json should be the same)\n\n'
-          'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/projects',
+          'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/wiki/projects',
         );
       }
       validateProjectImages(project, companies, workingDirPath, itemDir);

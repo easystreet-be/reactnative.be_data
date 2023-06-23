@@ -19,7 +19,7 @@ Future<List<Company>> validateCompanies(String workingDirPath) async {
       if (baseName != company.name) {
         throw ArgumentError(
           '${company.name} has an invalid name. (directory and name in info.json should be the same)\n\n'
-          'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/companies',
+          'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/wiki/companies',
         );
       }
       await validateCompanyImages(company, workingDirPath, itemDir);

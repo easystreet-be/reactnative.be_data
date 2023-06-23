@@ -22,7 +22,7 @@ void validateProjectImages(Project project, List<Company> companies,
   if (project.images != null) {
     throw ArgumentError(
       '${project.name} has configured images.\n\n'
-      'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/projects',
+      'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/wiki/projects',
     );
   }
   final companyForProject = companies
@@ -45,7 +45,7 @@ ProjectImages _getImages(
   if (!imagesDir.existsSync()) {
     throw ArgumentError(
       '${project.name} has no `assets/img` directory added.\n\n'
-      'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/projects',
+      'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/wiki/projects',
     );
   }
   final dir = Directory(
@@ -59,7 +59,7 @@ ProjectImages _getImages(
       if (!_allowedImageFolder.contains(fileName)) {
         throw ArgumentError(
           '${project.name} has invalid folder in the image folder ($fileName).\n\n'
-          'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/projects',
+          'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/wiki/projects',
         );
       }
       screenshotLinks.addAll(_getScreenshotsUrls(project, imageFile, dir));
@@ -74,7 +74,7 @@ ProjectImages _getImages(
       } else {
         throw ArgumentError(
           '${project.name} has invalid images in the image folder ($fileName).\n\n'
-          'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/projects',
+          'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/wiki/projects',
         );
       }
     } else {
@@ -85,7 +85,7 @@ ProjectImages _getImages(
   if (appIconUrl == null) {
     throw ArgumentError(
       '${project.name} has no app_icon.webp file.\n\n'
-      'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/projects',
+      'Check the documentation for more information. https://github.com/easystreet-be/madein.reactnative.be_data/wiki/projects',
     );
   }
   return ProjectImages(
