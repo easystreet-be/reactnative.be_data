@@ -1,6 +1,6 @@
 # Contributing to Made in React Native Data
 
-Thank you for considering contributing to the "madein.reactnative.be_data" repository! We appreciate your interest in our project.
+Thank you for considering contributing to the "reactnative.be_data" repository! We appreciate your interest in our project.
 
 ## How to contribute
 
@@ -23,7 +23,7 @@ We have a code of conduct in place to ensure that our community is welcoming and
 
 ## Issue tracker
 
-If you encounter any issues or bugs, please report them on our [issue tracker](https://github.com/easystreet-be/madein.reactnative.be_data/issues). When reporting an issue, please provide as much detail as possible, including:
+If you encounter any issues or bugs, please report them on our [issue tracker](https://github.com/easystreet-be/reactnative.be_data/issues). When reporting an issue, please provide as much detail as possible, including:
 
 - Steps to reproduce the issue
 - Expected behavior
@@ -34,4 +34,4 @@ If you encounter any issues or bugs, please report them on our [issue tracker](h
 
 If you have any questions or concerns, please reach out to the maintainers of this repository at [insert maintainer email address]. We are always happy to help and support our contributors.
 
-Thank you for your contributions and helping to make the "madein.reactnative.be_data" project better!
+Thank you for your contributions and helping to make the "reactnative.be_data" project better!

@@ -1,6 +1,6 @@
 # Code of Conduct
 
-As contributors and maintainers of the "madein.reactnative.be_data" repository, we pledge to create and maintain an inclusive and welcoming community for all people. We value diversity and seek to foster a positive and safe environment for everyone involved in the development of this project.
+As contributors and maintainers of the "reactnative.be_data" repository, we pledge to create and maintain an inclusive and welcoming community for all people. We value diversity and seek to foster a positive and safe environment for everyone involved in the development of this project.
 
 To achieve this, we ask all contributors and maintainers to adhere to the following code of conduct:
 
