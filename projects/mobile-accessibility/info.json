@@ -1,0 +1,19 @@
+{
+  "name": "Mobile Accessibility",
+  "description": "Mobile application to showcase usage, examples, effort and importance of accessibility support",
+  "publisher": "In The Pocket",
+  "developers": [
+    {
+      "githubUserName": "thibmaek",
+      "companyName": "In The Pocket"
+    },
+    {
+      "githubUserName": "sandergo90",
+      "companyName": "In The Pocket"
+    }
+  ],
+  "releaseData": "2022-03-22",
+  "links": {
+    "github": "https://github.com/inthepocket/mobile-accessibility"
+  }
+}
