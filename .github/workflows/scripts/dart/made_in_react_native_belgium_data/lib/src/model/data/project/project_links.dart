@@ -10,8 +10,8 @@ class ProjectLinks {
   final String? appstore;
   @JsonKey(name: 'playstore')
   final String? playstore;
-  @JsonKey(name: 'webApp')
-  final String? webApp;
+  @JsonKey(name: 'website')
+  final String? website;
   @JsonKey(name: 'marketingWebsite')
   final String? marketingWebsite;
   @JsonKey(name: 'youTube')
@@ -24,7 +24,7 @@ class ProjectLinks {
   const ProjectLinks({
     this.appstore,
     this.playstore,
-    this.webApp,
+    this.website,
     this.marketingWebsite,
     this.youTube,
     this.demoYouTubeVideo,
