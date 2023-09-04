@@ -1,0 +1,18 @@
+{
+  "name": "My Viking",
+  "description": "Everything a Viking needs, right at your fingertips.",
+  "publisher": "Mobile Vikings",
+  "developers": [
+    {
+      "githubUserName": "",
+      "companyName": "ACA Group"
+    }
+  ],
+  "releaseData": "2014-07-14",
+  "links": {
+    "appstore": "https://apps.apple.com/be/app/my-viking/id893916390",
+    "playstore": "https://play.google.com/store/apps/details?id=com.vikingco.vikingapp",
+    "webApp": "https://mobilevikings.be/en/offer/my-viking-app/",
+    "youTube": "https://www.youtube.com/user/MobileVikings"
+  }
+}

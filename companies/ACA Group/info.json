@@ -1,0 +1,9 @@
+{
+  "name": "ACA Group",
+  "description": "Your partner, every step of the mobile highway.",
+  "useLogoInsteadOfTextTitle": true,
+  "links": {
+    "website": "https://www.acagroup.be/en/services/mobile-applications",
+    "jobWebsite": "https://www.acagroup.be/en/careers"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Mobile Vikings",
+  "description": "Stay Restless.",
+  "useLogoInsteadOfTextTitle": false,
+  "links": {
+    "website": "https://mobilevikings.be/",
+    "jobWebsite": "https://work.mobilevikings.be/job-openings/"
+  }
+}
