@@ -39,7 +39,7 @@ ProjectImages _getImages(
 ) {
   final screenshotLinks = <String>[];
   String? appIconUrl;
-  String? bannedUrl;
+  String? bannerUrl;
 
   final imagesDir = Directory(join(itemDir.path, 'assets', 'img'));
   if (!imagesDir.existsSync()) {
@@ -70,7 +70,7 @@ ProjectImages _getImages(
       if (fileName == ProjectImageType.appIcon.fileName) {
         appIconUrl = imageUrl;
       } else if (fileName == ProjectImageType.banner.fileName) {
-        bannedUrl = imageUrl;
+        bannerUrl = imageUrl;
       } else {
         throw ArgumentError(
           '${project.name} has invalid images in the image folder ($fileName).\n\n'
@@ -90,7 +90,7 @@ ProjectImages _getImages(
   }
   return ProjectImages(
     appIconUrl: appIconUrl,
-    bannerUrl: bannedUrl,
+    bannerUrl: bannerUrl,
     screenshotUrls: screenshotLinks,
     companyLogoUrl: company?.images?.logoUrl,
   );
