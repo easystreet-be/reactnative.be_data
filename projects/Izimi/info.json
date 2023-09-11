@@ -1,0 +1,17 @@
+{
+  "name": "Izimi",
+  "description": "Izimi is een digitale kluis aangeboden door het notariaat. Een veilige app om al je gevoelige en belangrijke documenten te bewaren.",
+  "publisher": "Fednot",
+  "developers": [
+    {
+      "githubUserName": "inthepocket",
+      "companyName": "In The Pocket"
+    }
+  ],
+  "releaseData": "2020-10-17",
+  "links": {
+    "appstore": "https://apps.apple.com/be/app/izimi/id1536437100",
+    "playstore": "https://play.google.com/store/apps/details?id=com.certinot.app",
+    "website": "https://www.izimi.be/nl/"
+  }
+}
