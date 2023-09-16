@@ -1,0 +1,17 @@
+{
+  "name": "Multipharma",
+  "description": "Met de Multipharma app is het eenvoudig om jouw geneesmiddelen te reserveren in de apotheek van uw keuze en om uw apotheker op afstand om advies te vragen.",
+  "publisher": "Multipharma",
+  "developers": [
+    {
+      "githubUserName": "inthepocket",
+      "companyName": "In The Pocket"
+    }
+  ],
+  "releaseData": "2022-06-08",
+  "links": {
+    "appstore": "https://apps.apple.com/be/app/multipharma/id1476230937",
+    "playstore": "https://play.google.com/store/apps/details?id=com.multipharma",
+    "website": "https://www.multipharma.be/nl/multipharma/app.html"
+  }
+}

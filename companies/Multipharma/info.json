@@ -1,0 +1,8 @@
+{
+  "name": "Multipharma",
+  "description": "Bezoek Multipharma.be voor het meest uitgebreide aanbod in verzorging en gezondheid.",
+  "useLogoInsteadOfTextTitle": true,
+  "links": {
+    "website": "https://www.multipharma.be/"
+  }
+}
